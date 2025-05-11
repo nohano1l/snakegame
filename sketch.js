@@ -1,6 +1,6 @@
 let snake;
 let food;
-let gridSize = 50;
+let gridSize = 80;
 let cols, rows;
 let score = 0;
 
