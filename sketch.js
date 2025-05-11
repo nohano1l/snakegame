@@ -1,6 +1,6 @@
 let snake;
 let food;
-let gridSize = 50;
+let gridSize = 60;
 let cols, rows;
 let score = 0;
 
@@ -134,7 +134,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight - 50);
+  createCanvas(windowWidth, windowHeight - 30);
   updateGrid();
   frameRate(5);
   changeBackground();
@@ -284,7 +284,7 @@ function keyPressed() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight - 50);
+  resizeCanvas(windowWidth, windowHeight - 30);
   updateGrid();
 }
 
