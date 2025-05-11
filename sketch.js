@@ -134,7 +134,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight - 50);
+  canvas.parent('main');
   updateGrid();
   frameRate(5);
   changeBackground();
@@ -284,7 +285,7 @@ function keyPressed() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight - 50);
   updateGrid();
 }
 
