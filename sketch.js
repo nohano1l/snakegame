@@ -1,6 +1,6 @@
 let snake;
 let food;
-let gridSize = 80;
+let gridSize = 50;
 let cols, rows;
 let score = 0;
 
@@ -135,7 +135,6 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight - 50);
-  canvas.parent('game-area');
   updateGrid();
   frameRate(5);
   changeBackground();
